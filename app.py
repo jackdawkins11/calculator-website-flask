@@ -1,4 +1,5 @@
 import data.DataInterface as DF
+import data.DBUtilities
 import util
 from flask import Flask, request, send_from_directory, jsonify, session
 app = Flask(__name__)
@@ -100,3 +101,5 @@ def getLast10Calculations():
         "error": False,
         "calculations": calculations
     })
+
+data.DBUtilities.initializeDatabase()
