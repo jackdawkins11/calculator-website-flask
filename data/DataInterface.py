@@ -133,12 +133,12 @@ def getLast10CalculationsFormatted():
         val = float(row[3])
         time = row[5]
         formatted.append( {
-            "username": getUsernameByIdAsString(user_id),
-            "x": x,
-            "op": op,
-            "y": y,
-            "val": val,
-            "time": time
+            "Username": getUsernameByIdAsString(user_id),
+            "X": x,
+            "Op": op,
+            "Y": y,
+            "Val": val,
+            "Date": time
         } )
     return formatted
 
