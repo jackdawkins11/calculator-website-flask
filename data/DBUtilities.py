@@ -6,15 +6,15 @@ host = 'localhost'
 databasename = 'calculatorflask'
 
 TABLE_DEFS = {}
-TABLE_DEFS['Users'] =\
+TABLE_DEFS['users'] =\
   '''
-  create table products(
+  create table users(
     id int not null auto_increment primary key,
     username varchar(100),
     password varchar(100)
   )
   '''
-TABLE_DEFS['Calculations'] =\
+TABLE_DEFS['calculations'] =\
   '''
   create table calculations(
     x float(53),
@@ -22,7 +22,7 @@ TABLE_DEFS['Calculations'] =\
     y float(53),
     val float(53),
     user_id int not null,
-    date datetime
+    time datetime
   )
   '''
 
